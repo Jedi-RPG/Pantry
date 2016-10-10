@@ -6,7 +6,7 @@
     <div id="body">
         <div id="listTable" class ="row">
 			{Materials_table}
-			
+				{grand_total}
 		</div>
         <hr>
         {previous}

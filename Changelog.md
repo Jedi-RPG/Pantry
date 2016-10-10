@@ -3,6 +3,9 @@
 ============================================
 Members: Matthew, Dennis, Injo, Haram, Lydia
 
+2016-10-09 17:01 - Haram
+-Changed the format of resulting page of receive view, it will show the total price.
+
 2016-10-09 16:21 - Lydia
 -Edited readme image
 

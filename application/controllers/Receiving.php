@@ -88,23 +88,28 @@ class Receiving extends Application
 		$empty = "<b>" . $empty . "</b><br>Please try again!";
 	
 		$items[] = array('Ordered Items', '# Ordered Cases');
-		
-		//$source = $this->Materials->all();
+		$totalPrice = 0;
+	
 		$i = 1;
 		$j = 1;
 		foreach($orders as $cases)
 		{
 			if($cases != "" && $cases != 0){
 				$source = $this->Materials->get($i);
-				$items[] = array($source['name'],$cases);
+				$items[] = array("Case of ".$source['name'],$cases);
 				$j++;
+				$totalPrice += $source['price'] * $cases;
 			}
 			$i++;
         }
 
 		if($j == 1){
+			$price = "";
+			$this->data['grand_total'] = $price;
 			$this->data['Materials_table'] = $empty;
 		} else {
+			$price = "<b>Grand Total: </b>". ($this->toDollars($totalPrice));
+			$this->data['grand_total'] = $price;
 			$this->data['Materials_table'] = $this->table->generate($items);
 		}
 
