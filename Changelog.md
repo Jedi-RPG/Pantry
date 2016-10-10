@@ -6,6 +6,14 @@ Members: Matthew, Dennis, Injo, Haram, Lydia
 2016-10-09 17:01 - Haram
 -Changed the format of resulting page of receive view, it will show the total price.
 
+2016-10-09 16:21 - Lydia
+-Edited readme image
+
+2016-10-09 15:28 - Dennis
+-Admin controller now handles modifying of any property of a model entry
+-Edited README.md
+-Removed default CI footer
+
 2016-10-09 14:25 - Lydia
 -Edited MY_Controller, made navigation works for subpages under receiving, production and sales
 
